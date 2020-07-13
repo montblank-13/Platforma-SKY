@@ -1,0 +1,147 @@
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="strona_glowna_ucznia.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        
+        
+            <title>Strona Główna Ucznia</title>
+    </head>
+    
+    <body>
+     
+        <div class="menu"> 
+            
+            <a href="https://www.w3schools.com/" class="menuLogo">
+                <img id="logo" src="Obrazy/sygnet.png">
+            </a>
+            
+            <div id="hamburger">
+                <a href="#klasa">Klasa</a>
+                <a href="#platnosci">Płatności</a>
+                <a href="#profil">Mój profil</a>
+                <a href="#wiadomosci">Wiadomości</a>
+                <a href="#kontakt">Kontakt</a>
+              </div>
+            
+              <a href="javascript:void(0);" class="bars" onclick="myFunction()">
+
+                    <img src="IKONY/IKONY_strona_glowna/bars.png" style="height:24px;">
+                
+            </a>
+        </div>
+        
+        <div id="pasekNews">
+        
+        <p id="tekstNews">Tutaj będzie wyświetlany pojedynczy ważny news</p>
+            
+        </div>
+            
+        <div id="nawigacjaLekcji">
+        
+        <div id="przyciskSzerokosc">
+                
+        <div class="przyciskZwykly przyciskPierwszy">
+        
+            <div id="uruchomLekcje">
+            
+                Uruchom lekcję
+            
+            </div>
+            
+        </div>
+        
+        <div class="przyciskZwykly przyciskDrugi">
+            
+             <div id="uruchomLekcje">
+            
+                Odwołaj lekcję
+            
+            </div>
+        
+        </div>
+            
+        </div>   
+        
+        <div id="chat">
+        
+            <div id="tytulChat">
+                
+                Chat
+                            
+            </div>
+        
+        </div>
+        
+        <div id="dolneMenu">
+        
+            <div class="dolnyPasek">
+
+                 <div id="zadanieDomowe">
+
+                     <img class="dolnyPasekObraz" src="IKONY/IKONY_strona_glowna/home.png"> 
+
+                     <span class="dolnyPasekTekst">Wyzwanie domowe</span>
+
+                </div>
+
+
+            </div>
+
+            <div class="dolnyPasek">
+
+                    <div id="ostatniaLekcja">
+
+                        <img class="dolnyPasekObraz" src="IKONY/IKONY_strona_glowna/last_class.png"> 
+
+                        <span class="dolnyPasekTekst">Ostatnia lekcja</span>
+
+                    </div>
+
+            </div>
+            
+            <div class="dolnyPasek">
+
+                    <div id="dotychczasoweLekcje">
+
+                        <img class="dolnyPasekObraz" src="IKONY/IKONY_strona_glowna/all_classes.png"> 
+
+                        <span class="dolnyPasekTekst">Dotychczasowe lekcje</span>
+
+                    </div>
+            </div>
+                
+            <div class="dolnyPasek">
+
+                    <div id="zaplanowaneLekcje">
+
+                        <img class="dolnyPasekObraz" src="IKONY/IKONY_strona_glowna/all_classes.png"> 
+
+                        <span class="dolnyPasekTekst">Wszystkie lekcje</span>
+
+                    </div>
+
+            </div>
+            
+        </div>
+            
+        </div>
+            
+        <script>
+            function myFunction() {
+              var x = document.getElementById("hamburger");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>    
+        
+    </body>
+        
+</html>

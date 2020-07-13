@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body 
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.menu #hamburger {
+  display: none;
+}
+
+/*Wygląd linków z menu, kolor czcionki, rozmiar itp.*/
+
+.menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/*położenie i kolor tła hamburgera*/
+
+.menu a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ 
+ /*zmiana tła menu*/
+ 
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    
+#logo {
+
+width: 24px;
+height: 24px;  
+}
+    
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="menu">
+  <a href="#home" class="active"><img id="logo" src="Obrazy/sygnet.png">
+</a>
+  <div id="hamburger">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="IKONY/IKONY_strona_glowna/bars.png" style="height:15px;">
+
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("hamburger");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
